@@ -1,0 +1,24 @@
+export class assignBooking{
+    id:number;
+    jobId:number;
+    customerId:number;
+    bookingId:number;
+    workerId:number;
+    bookingStatus:string;
+    constructor(
+        id:number,
+    jobId:number,
+    customerId:number,
+    bookingId:number,
+    workerId:number,
+    bookingStatus:string
+    )
+    {
+        this.id=id;
+        this.jobId=jobId;
+        this.customerId=customerId;
+        this.workerId=workerId;
+        this.bookingId=bookingId;
+        this.bookingStatus=bookingStatus;
+    }
+}

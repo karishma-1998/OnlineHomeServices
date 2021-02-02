@@ -1,0 +1,30 @@
+<div class="col-md-6">
+    <h2 class="text-center">Add Job</h2>
+    <form method="POST">
+      <div class="form-group">
+        <label for="name">Service Name:</label>
+        <input type="text" [(ngModel)]="jobName" placeholder="Name" name="name" class="form-control" id="name" required>
+      </div>
+    
+      <div class="form-group">
+        <label for="description">Service Description:</label>
+        <input type="text" [(ngModel)]="jobDescription" placeholder="Description" name="description" class="form-control" id="description" required>
+      </div>
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" [(ngModel)]="price" placeholder="Price" name="price" class="form-control" id="price" required>
+      </div>
+    
+      <div class="form-group">
+        <label for="discount">Discount:</label>
+        <input type="number" [(ngModel)]="discount" placeholder="Discount" name="discount" class="form-control" id="discount" required>
+      </div>
+
+      <div class="form-group">
+        <input type="file" (change)="onFileChanged($event)">
+      </div>
+    
+      <button type="button" class="btn btn-success" (click)="createNewJob()">Add Job</button>
+    </form>
+    </div>
+    

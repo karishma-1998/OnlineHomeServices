@@ -1,0 +1,53 @@
+<br>
+<br>
+<section class="form5 cid-sj9WnvfzBF" id="form5-v">
+    
+    <div class="mbr-overlay"></div>
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Book Service For {{jobs.jobName|uppercase}}</strong></h3>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form method="POST" class="mbr-form form-with-styler" data-form-title="Form Name">
+                    
+                    <div class="dragArea row">
+                        <div class="col-md col-sm-12 form-group" data-for="price">
+                         <b>Price::</b><input type="text" name="price" class="form-control" value={{jobs.price}} readonly>
+                        </div>
+                        <div class="col-md col-sm-12 form-group" data-for="discount">
+                         <b>Discount::</b><input type="text" name="discount" class="form-control" value="{{jobs.discount}}%" readonly>
+                        </div>
+                        
+                        <div class="col-12 form-group" data-for="serviceBookDate">
+                            <b>Choose Date For Service::</b><input type="date" name="serviceBookDate" [(ngModel)]="serviceBookDate" class="form-control" required>
+                        </div>
+                        <!-- <div class="col-md col-sm-12 form-group" data-for="BookingStatus">
+                            <b>Your Booking Status::</b> <select name="bookingStatus" placeholder="BookingStatus" [(ngModel)]="bookingStatus"  class="form-control" required>
+                                <option >Choose Booking Status</option>
+                                <option value="WORKPENDING">PENDING</option>
+                                <option value="WORKDONE">DONE</option>
+                            </select>
+                        </div> -->
+                        <div class="col-md col-sm-12 form-group" data-for="totalBill">
+                            <b>Total Bill::</b><input type="text" name="totalBill" class="form-control" value="{{jobs.price-(jobs.price*jobs.discount/100)}}"readonly>
+                           </div>
+                        <div class="col-md col-sm-12 form-group" data-for="PaymentStatus">
+                            <b>Select Payment Type::</b> <select name="paymentStatus" placeholder="PaymentStatus" [(ngModel)]="paymentStatus" class="form-control" required>
+                                <option >Choose Payment Status</option>
+                                <option value="DONE">CASH ON DELIVERY</option>
+                                <option value="DONE">CREDIT CARD</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="button" class="btn btn-primary display-4" (click)="saveBooking()">Book</button>
+                        </div>
+                       
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

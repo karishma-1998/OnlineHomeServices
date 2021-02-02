@@ -1,0 +1,16 @@
+<br>
+<br>
+<div class="col-md-6">
+    <h2 class="text-center">Update Status</h2>
+</div>
+<form>
+    <div class="col-md col-sm-12 form-group" data-for="BookingStatus">
+        <b>Change Booking Status::</b> <select name="bookingStatus" placeholder="BookingStatus" [(ngModel)]="bookingStatus"  class="form-control" required>
+            <option >Choose Booking Status</option>
+            <option value="WORKPENDING">PENDING</option>
+            <option value="WORKDONE">DONE</option>
+        </select>
+    </div>
+    
+    <button class="btn btn-success" (click)="updateStatus()">Update Service Details</button>
+</form>

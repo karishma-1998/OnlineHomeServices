@@ -1,0 +1,56 @@
+<section class="form5 cid-sj9WnvfzBF" id="form5-v">
+    
+    <div class="mbr-overlay"></div>
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Register</strong></h3>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="YNUtmNzS4auVg2Hvyc1upLw8oD/4l/5BvUFpFkceyIVrf+ZkggZwYYB3UgHc+rqITbFZnvJndgcG2B8JBzrD771ZfMOapNtXOwsI5aQcfUewcHRTa/EGydR/XRfDYiAx">
+                    
+                    <div class="dragArea row">
+                        <div class="col-md col-sm-12 form-group" data-for="role">
+                            <input type="text" [(ngModel)]="role" name="role" placeholder="New Customer" data-form-field="role" class="form-control" value="customer" id="role" readonly>
+                        </div>
+                        <div class="col-md col-sm-12 form-group" data-for="firstName">
+                            <input type="text" [(ngModel)]="firstName" name="firstName" placeholder="First Name" data-form-field="firstName" class="form-control"  id="firstName" required>
+                        </div>
+                        <div class="col-md col-sm-12 form-group" data-for="lastName">
+                            <input type="text" [(ngModel)]="lastname" name="lastName" placeholder="Last Name" data-form-field="lastName" class="form-control"  id="lastName" required>
+                        </div>
+                        <div class="col-12 form-group" data-for="email">
+                            <input type="email" [(ngModel)]="email" name="email" placeholder="Email" data-form-field="email" class="form-control"  id="email" required>
+                        </div>
+                        
+                        <div class="col-md col-sm-12 form-group" data-for="password">
+                            <input type="password" [(ngModel)]="password" name="password" placeholder="Password" data-form-field="password" class="form-control"  id="password" required>
+                        </div>
+                        
+                        <div class="col-12 form-group" data-for="mobileNo">
+                            <input type="tel" name="mobileNo" [(ngModel)]="mobileNo" placeholder="Mobile Number" data-form-field="mobileNo" class="form-control"  id="mobileNo" required>
+                        </div>
+                        <div class="col-12 form-group" data-for="textarea">
+                            <textarea name="textarea" placeholder="Address" [(ngModel)]="address" data-form-field="textarea" class="form-control" id="textarea-form5-v" required></textarea>
+                        </div>
+                        <div class="col-md col-sm-12 form-group" data-for="city">
+                            <input type="text" name="city" [(ngModel)]="city" placeholder="City" data-form-field="city" class="form-control"  id="city" required>
+                        </div>
+                        <div class="col-md col-sm-12 form-group" data-for="state">
+                            <input type="text" name="state" [(ngModel)]="state" placeholder="State" data-form-field="state" class="form-control" id="state" required>
+                        </div>
+                        <div class="col-md col-sm-12 form-group" data-for="country">
+                            <input type="text" [(ngModel)]="country" name="country" placeholder="Country" data-form-field="country" class="form-control"  id="country" required>
+                        </div>
+                        <div class="col-md col-sm-12 form-group" data-for="pincode">
+                            <input type="text" name="pincode" [(ngModel)]="pincode" placeholder="Pincode" data-form-field="pincode" class="form-control" id="pincode" required>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="button" class="btn btn-primary display-4" (click)="addNewCustomer()">Register</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

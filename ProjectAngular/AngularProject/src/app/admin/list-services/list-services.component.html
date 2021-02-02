@@ -1,0 +1,43 @@
+
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>List Services</h2>
+        </div>
+    </div>
+    <a class="btn btn-warning" (click)="displayform()">
+        Add Job
+    </a>
+    <!-- <div *ngIf="pflag">
+        <app-add-new-job></app-add-new-job>
+    </div> -->
+    <div>
+        
+            <table class="table table-bordered table-condensed table-striped">
+                    <tr>
+                        <th>Service ID</th>
+                        <th>Service Name</th>
+                        <th>Service Description</th>
+                        <th>Price</th>
+                        <th>Discount</th>
+                        <th>Delete</th>
+                        <th>Update</th>
+                    </tr>
+                    <tr *ngFor="let j of jobsArr;">
+                        <td>{{j.jobId}}</td>
+                        <td>{{j.jobName}}</td>
+                        <td>{{j.jobDescription}}</td>
+                        <td>{{j.price}}</td>
+                        <td>{{j.discount}}</td>
+                        <td><a class="btn btn-warning"><span (click)="deleteJob(j)">Delete</span></a></td>
+                        <!-- <td><button class="btn btn-warning" routerLink="/update/{{j.jobId}}">Update</button></td> -->
+                        <td><a class="btn btn-warning"><span (click)="updateJob(j)">Update</span></a></td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+    <div *ngIf="flag">
+        <app-update-list [uob]="ob" (myevent)="jobsArr=$event"></app-update-list>
+    </div>

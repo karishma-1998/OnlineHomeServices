@@ -1,0 +1,19 @@
+<br>
+<br>
+<div>
+    <table class="table table-bordered table-condensed table-striped">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Mobile No</th>
+        </tr>
+        <tr *ngFor='let c of custArr;'> 
+            <td>{{c.firstName|uppercase}}</td>
+            <td>{{c.lastname|uppercase}}</td>
+            <td>{{c.address|uppercase}}-{{c.city|uppercase}}-{{c.state|uppercase}}-{{c.country|uppercase}}</td>
+            <td>{{c.mobileNo|uppercase}}</td>
+        </tr>
+    </table>
+      
+</div>
